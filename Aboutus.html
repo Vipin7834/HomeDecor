@@ -1,0 +1,390 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>About us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #banner1 {
+            /* border: 2px solid black; */
+            background-image: url('section6(3).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+        }
+
+        #nav {
+            /* border: 2px solid black; */
+            /* background-color: rgb(154, 144, 144); */
+            position: sticky;
+            top: 0;
+
+        }
+
+        #nav li a {
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        #nav li a:hover {
+            /* color: white; */
+        }
+
+        #nav li {
+            /* border: 2px solid red; */
+            margin-right: 75px;
+
+
+
+        }
+
+        .dropdown-menu .dropdown-item {
+            background-color: gray;
+            /* color: black; */
+        }
+
+        .content {
+            /* border: 2px solid white; */
+            width: 50%;
+            color: white;
+        }
+
+        .content button {
+            border: none;
+            padding: 10px 40px;
+            background-color: rgb(35, 87, 128);
+            color: white;
+
+        }
+
+        .content button:hover {
+            transition-duration: 0.5s;
+            border: 2px solid white;
+            background-color: transparent;
+
+        }
+
+        #content h1 {
+            font-size: 55px;
+        }
+
+        #line p {
+            font-weight: 500;
+            font-size: 14px;
+
+        }
+
+        #mid {
+            /* border: 2px solid black; */
+
+        }
+
+        #mid #col1 {
+            /* border: 2px solid red; */
+            background-image: url('about1.png');
+            background-size: cover;
+            border-radius: 10%;
+            height: 360px;
+            box-shadow: 15px 15px 15px rgb(79, 76, 76);
+
+        }
+
+        #mid #col2 {
+            /* border: 2px solid red; */
+            text-align: center;
+            margin: auto;
+        }
+
+        #mid #col3 {
+            text-align: center;
+            margin: auto;
+        }
+
+        #mid #col4 {
+            background-image: url('banner1.jpg');
+            background-size: cover;
+            border-radius: 10%;
+            height: 360px;
+            box-shadow: 15px 15px 15px rgb(79, 76, 76);
+        }
+
+        #mid #col5 {
+            background-image: url('banner1.jpg');
+            background-size: cover;
+            border-radius: 10%;
+            height: 360px;
+            box-shadow: 15px 15px 15px rgb(79, 76, 76);
+        }
+
+        #mid #col6 {
+            text-align: center;
+            margin: auto;
+        }
+
+        #mid button {
+            padding: 8px 30px;
+            border: none;
+            background-color: rgb(35, 87, 128);
+            color: white;
+        }
+
+        #mid button:hover {
+            background-color: transparent;
+            color: rgb(35, 87, 128);
+            transition: 0.5s;
+            border: 2px solid rgb(35, 87, 128);
+        }
+        #last {
+            background-color: #343a40;
+            color: white;
+        }
+
+        #last .row #col2 {
+            text-align: right;
+        }
+        #last .col a{
+            text-decoration: none;
+            color: white;
+            
+            
+        }
+        #last .row .col li{
+          margin-top: 15px
+        }
+        #last input{
+            border-radius: 10px;
+            height: 40px;
+            padding: 10px;
+        }
+        #last button{
+            border-radius: 10px;
+            padding: 7px 5px;
+            background-color: rgb(224, 184, 67);
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="banner1">
+        <div class="container " id="nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="" class="img-fluid" style="width: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fas fa-stream "></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                    <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                                    <!-- <li><hr class="dropdown-divider"></li> -->
+                                    <li><a class="dropdown-item" href="#">Handloom</a></li>
+                                    <li><a class="dropdown-item" href="#">Clothes</a></li>
+                                    <li><a class="dropdown-item" href="#">Spices</a></li>
+                                    <li><a class="dropdown-item" href="#">Imitation jewellwery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+
+                            <input type="search" name="" id="" placeholder="Search"
+                                style="height:25px; margin-top: 10px; border: none"> &nbsp; &nbsp;
+
+                            <a href="#"><img src="search-13-xxl.png" alt=""
+                                    style="height: 25px; margin-top: 10px;"></a>&nbsp;&nbsp;&nbsp;
+                            <a href="#"><img src="user2-removebg-preview.png" alt=""
+                                    style="height:30px; margin-top: 6px;"></a>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <hr style="border: 1px solid white;">
+        </div>
+        <div class="container" id="content">
+            <div class="content mt-5 pt-5"> <br><br>
+                <h1>About Us!</h1><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum tenetur amet facilis praesentium!
+                    Reprehenderit error corrupti voluptatibus, at dolores aliquam aliquid dicta, consequuntur ut
+                    temporibus impedit cupiditate. Dolores, ex beatae?</p> <br>
+                <button type="button">GET QUOTE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- line -->
+
+    <div class="container mt-5 " id="line"> <br><br>
+        <p> <i> "We are a one-of-a-kind manufacturing export house dealing in Handcrafted home décor and lifestyle
+                products that integrate worldwide aesthetic with proper Indian craftsmanship. Primarily based in Delhi,
+                the corporation now has over a decade of revel in within the handicraft and Interior Zone leans on the
+                3-pronged philosophy of ‘Quality, Product Aesthetic Value and On Time Delivery'"</i>
+
+        </p>
+
+    </div>
+
+    <!-- mid section -->
+
+    <div class="container mt-5 pt-5 pb-5" id="mid">
+
+        <div class="row">
+            <div class="col " id="col1">
+
+            </div>
+            <div class="col mx-5" id="col2">
+
+                <h1>Our Mission</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro atque id quia. Tenetur
+                    provident ipsam ducimus ut numquam id mollitia esse delectus recusandae! Aliquam aut corrupti
+                    molestiae blanditiis obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                    quasi quos aliquid voluptas recusandae culpa soluta, ab, possimus minus officiis nisi unde. Ipsam
+                    quam ipsa sint veritatis explicabo? Aspernatur, ipsa!</p>
+            </div>
+        </div>
+
+        <br><br><br>
+        <!-- 2nd section -->
+        <div class="row">
+            <div class="col mx-5" id="col3">
+
+                <h1>Our Vision</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro atque id quia. Tenetur
+                    provident ipsam ducimus ut numquam id mollitia esse delectus recusandae! Aliquam aut corrupti
+                    molestiae blanditiis obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                    quasi quos aliquid voluptas recusandae culpa soluta, ab, possimus minus officiis nisi unde. Ipsam
+                    quam ipsa sint veritatis explicabo? Aspernatur, ipsa!</p>
+            </div>
+            <div class="col " id="col4">
+
+            </div>
+        </div>
+        <br><br><br>
+        <!-- 3rd Section -->
+
+        <hr>
+        <br>
+
+        <div class="row">
+            <div class="col " id="col5">
+
+            </div>
+            <div class="col mx-5" id="col6">
+
+                <h1>Career With Us</h1> <br>
+                <p>Ekansh Global works with top retailers and supermarkets across the globe. We have been in this
+                    industry for the past 5+ years, with profound cognizance and experience about the product. We have 2
+                    units and are perpetually expanding our company. Apply and be a component of our sublime team.</p>
+                <br>
+                <button type="button">Apply Now!</button>
+            </div>
+
+        </div>
+    </div>
+
+     <!-- last section -->
+     <div class="container-fluid pt-5 pb-2" id="last">
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col pb-5" id="col1">
+                    <h2>Have any project or query?</h2>
+                    <h2>Just say hello <span style="color:yellow">Mail us</span></h2>
+                </div>
+                <div class="col" id="col2">
+                    <h2>+91 673 586 XXXX</h2>
+                    <h5>xyz@abc.com</h5>
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <hr>
+                <br><br><br>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col">
+                    <h3>Address</h3>
+                    <p>New Delhi, Delhi, India</p>
+                    <p>+91 785 789 XXXX</p>
+                    <p>xyz@abc.com</p>
+                </div>
+                <div class="col">
+                    <h3>Services</h3>
+                    <ul type="none">
+                        <li><a href=""> Interior</a></li>
+                        <li><a href=""> Architecture</a></li>
+                        <li><a href=""> 3D Modeling</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Company</h3>
+                    <ul type="none">
+                        <li><a href=""> About</a></li>
+                        <li><a href=""> Blog</a></li>
+                        <li><a href=""> Contact</a></li>
+                        <li><a href=""> Appointment</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Subscribe</h3> <br>
+                    <input type="email" name="" id="" placeholder="Enter your mail">
+                    <button type="button">Subscribe</button> <br><br><br>
+                    <p>Esteem spirit temper too say adius who direct esteem lucjily</p>   
+                    
+                    
+                   
+                    <br><br>
+                </div>
+            
+            </div>
+            <hr>
+        </div>
+        
+        <p style="text-align: center;">Copyright ©2023 All rights reserved </p>
+    </div>
+
+</body>
+
+</html>

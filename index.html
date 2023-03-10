@@ -1,0 +1,625 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #banner1 {
+            /* border: 2px solid black; */
+            background-image: url('banner4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 900px;
+        }
+
+        #nav {
+            /* border: 2px solid black; */
+            /* background-color: rgb(154, 144, 144); */
+            position: sticky;
+            top: 0;
+
+        }
+
+        #nav li a {
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        #nav li a:hover {
+            /* color: white; */
+        }
+
+        #nav li {
+            /* border: 2px solid red; */
+            margin-right: 75px;
+
+
+
+        }
+
+        .dropdown-menu .dropdown-item {
+            background-color: gray;
+            /* color: black; */
+        }
+
+        .content {
+            /* border: 2px solid white; */
+            width: 50%;
+            color: white;
+        }
+
+        .content button {
+            border: none;
+            padding: 10px 40px;
+            background-color: rgb(48, 47, 47);
+            color: white;
+
+        }
+
+        .content button:hover {
+            transition-duration: 0.5s;
+            border: 2px solid white;
+            background-color: transparent;
+
+        }
+
+        #content h1 {
+            font-size: 55px;
+        }
+
+        #section2 .row .col {
+            /* display: inline; */
+            /* border: 2px solid red; */
+        }
+
+        #section2 .row .col hr {
+            border: 3px solid rgb(99, 238, 18);
+            width: 80px;
+
+        }
+
+        #section2 .row .col h2 {
+            font-size: 40px;
+
+        }
+
+        #section2 .row .col p {
+            color: white;
+        }
+
+        #section2 .row .col h1 {
+            font-size: 180px;
+            text-align: center;
+            opacity: 0.2;
+
+        }
+
+        #section2 .row #section21:hover {
+            /* background-color: red; */
+            color: white;
+            transition: 0.5s;
+            background-image: url('section2(2).avif');
+            background-size: cover;
+
+
+        }
+
+        #section2 .row #section22:hover {
+            /* background-color: red; */
+            color: white;
+            transition: 0.5s;
+            background-image: url('section2(3).avif');
+            background-size: cover;
+
+        }
+
+        #section2 .row #section23:hover {
+            /* background-color: red; */
+            color: white;
+            transition: 0.5s;
+            background-image: url('section2(4).avif');
+            background-size: cover;
+        }
+
+        #section3 {
+            background-color: rgb(235, 242, 245);
+        }
+
+        #section3 .row .col {
+            /* border: 2px solid red; */
+        }
+
+        #section3 button {
+            border: none;
+            padding: 10px 40px;
+            background-color: rgb(48, 47, 47);
+            color: white;
+
+        }
+
+        #section3 button:hover {
+            transition-duration: 0.5s;
+            border: 2px solid rgb(48, 47, 47);
+            background-color: transparent;
+            color: rgb(48, 47, 47);
+
+        }
+
+        #section3 .row #col1 {
+            background-image: url('1.png');
+            background-size: cover;
+            /* height: 400px; */
+            box-shadow: 15px 15px 15px rgb(69, 67, 67);
+        }
+
+        #section3 .row #col2 {
+            margin: auto;
+        }
+
+        #section3 h1 {
+            font-size: 60px;
+        }
+
+        #section4 {
+            /* border: 2px solid red; */
+            /* height: 500px; */
+        }
+
+        #section4 .col {
+            /* border: 2px solid black; */
+            /* height: 200px; */
+        }
+
+        #section4 #col3 {
+            margin: auto;
+
+        }
+
+        #section4 #col4 {
+            background-image: url('2.png');
+            background-size: cover;
+            height: 320px;
+            box-shadow: 15px 15px 15px rgb(69, 67, 67);
+        }
+
+        .row #col5 {
+            background-image: url('3.png');
+            background-size: cover;
+            box-shadow: 15px 15px 15px rgb(69, 67, 67);
+        }
+
+        .row #col6 {
+            margin: auto;
+        }
+
+        #section4 .row #col7 {
+            margin: auto;
+        }
+
+        #section4 #col8 {
+            background-image: url('4.png');
+            background-size: cover;
+            height: 310px;
+            box-shadow: 15px 15px 15px rgb(69, 67, 67);
+        }
+
+        #section5 .row {
+            /* border: 2px solid red; */
+        }
+
+        #section5 .row .col {
+            /* border: 2px solid black; */
+        }
+
+        #section5 #section51 {
+            background-image: url('1(1).png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 650px;
+        
+        }
+
+        #section5 h1 {
+            font-size: 70px;
+            margin: auto;
+
+        }
+
+        #section5 #section52 {
+            margin: auto;
+            background-color: rgb(235, 238, 240);
+        }
+
+        #section5 button {
+            border: none;
+            padding: 10px 40px;
+            background-color: rgb(48, 47, 47);
+            color: white;
+        }
+
+        #section5 button:hover {
+            transition-duration: 0.5s;
+            border: 2px solid rgb(48, 47, 47);
+            background-color: transparent;
+            color: rgb(48, 47, 47);
+
+        }
+
+        #section6 {
+            /* border: 2px solid red; */
+            background-image: url('section6(4).png');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            height: 550px;
+
+        }
+
+        #socialMedia {
+            /* border: 2px solid red; */
+        }
+
+        #socialMedia h3 {
+            font-size: 25px;
+        }
+
+        #socialMedia img {
+            width: 400px;
+            border-top-left-radius: 20%;
+            border-bottom-right-radius:20%;
+            box-shadow: 15px 15px 15px rgb(85, 84, 84);
+        }
+
+        #last {
+            background-color: #343a40;
+            color: white;
+        }
+
+        #last .row #col2 {
+            text-align: right;
+        }
+        #last .col a{
+            text-decoration: none;
+            color: white;
+            
+            
+        }
+        #last .row .col li{
+          margin-top: 15px
+        }
+        #last input{
+            border-radius: 10px;
+            height: 40px;
+            padding: 10px;
+        }
+        #last button{
+            border-radius: 10px;
+            padding: 7px 5px;
+            background-color: rgb(224, 184, 67);
+            border: none;
+            color: white;
+        }
+        /* .bgcolor.scrolled{
+            background-color: rgba(0, 0, 0, 0.692);
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="banner1">
+        <div class="container " id="nav">
+            <nav class="navbar navbar-expand-lg bg-color">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="" class="img-fluid" style="width: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fas fa-stream "></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                    <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                                    <!-- <li><hr class="dropdown-divider"></li> -->
+                                    <li><a class="dropdown-item" href="#">Handloom</a></li>
+                                    <li><a class="dropdown-item" href="#">Clothes</a></li>
+                                    <li><a class="dropdown-item" href="#">Spices</a></li>
+                                    <li><a class="dropdown-item" href="#">Imitation jewellwery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+
+                            <input type="search" name="" id="" placeholder="Search"
+                                style="height:25px; margin-top: 10px; border: none"> &nbsp; &nbsp;
+
+                            <a href="#"><img src="search-13-xxl.png" alt=""
+                                    style="height: 25px; margin-top: 10px;"></a>&nbsp;&nbsp;&nbsp;
+                            <a href="#"><img src="user2-removebg-preview.png" alt="" style="height:30px; margin-top: 6px;"></a>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <hr style="border: 1px solid rgb(60, 58, 58);">
+        </div>
+        <div class="container" id="content">
+            <div class="content mt-5 pt-5"> <br><br>
+                <h1>Inerior Design Solution For Everyone</h1><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum tenetur amet facilis praesentium!
+                    Reprehenderit error corrupti voluptatibus, at dolores aliquam aliquid dicta, consequuntur ut
+                    temporibus impedit cupiditate. Dolores, ex beatae?</p> <br>
+                <button type="button">View Works</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="section2">
+        <div class="row">
+            <div class="col pt-5 px-5" id="section21">
+                <h2>Planing</h2>
+                <hr> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, tempore delectus? Aliquid, error
+                    labore eligendi non reiciendis quo delectus deleniti id dignissimos consequuntur veniam architecto
+                    unde itaque officiis fuga doloremque.</p> <br>
+                <h1>01</h1><br>
+            </div>
+            <div class="col pt-5 px-5" id="section22">
+                <h2>Architecture</h2>
+                <hr> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, tempore delectus? Aliquid, error
+                    labore eligendi non reiciendis quo delectus deleniti id dignissimos consequuntur veniam architecto
+                    unde itaque officiis fuga doloremque.</p><br>
+                <h1>02</h1><br>
+            </div>
+            <div class="col pt-5 px-5" id="section23">
+                <h2>3D Design</h2>
+                <hr> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, tempore delectus? Aliquid, error
+                    labore eligendi non reiciendis quo delectus deleniti id dignissimos consequuntur veniam architecto
+                    unde itaque officiis fuga doloremque.</p><br>
+                <h1>03</h1><br>
+            </div>
+        </div>
+    </div>
+
+    <br> <!-- section3 -->
+
+    <div class="container-fluid p-5 " id="section3">
+
+        <h1>Our Works</h1>
+        <div class="row mt-5 mx-5">
+            <div class="col  mx-5" id="col1">
+
+            </div>
+            <div class="col p-5 " id="col2">
+                <h2 style="font-size: 40px;">White Blocks House</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero atque rerum voluptates,
+                    quaerat adipisci officia ab placeat id !</p> <br><br>
+                <button type="button">Details</button>
+            </div>
+        </div>
+        <br><br>
+        <!-- 2nd section -->
+
+        <div class="row mt-5 mx-5" id="section4">
+            <div class="col  px-5" id="col3">
+                <h2 style="font-size: 40px;">Art Gallery Design</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero atque rerum voluptates,
+                    quaerat adipisci officia ab placeat id !</p> <br><br>
+                <button type="button">Details</button>
+            </div>
+            <div class="col " id="col4">
+
+            </div>
+        </div>
+        <br>
+        <!-- 3rd section -->
+        <div class="row mt-5 mx-5">
+            <div class="col  mx-5" id="col5">
+
+            </div>
+            <div class="col p-5 " id="col6">
+                <h2 style="font-size: 40px;">White Blocks House</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero atque rerum voluptates,
+                    quaerat adipisci officia ab placeat id !</p> <br><br>
+                <button type="button">Details</button>
+            </div>
+        </div>
+        <br><br>
+        <!-- 4th section -->
+
+        <div class="row mt-5 mx-5" id="section4">
+            <div class="col px-5" id="col7">
+                <h2 style="font-size: 40px;">Office Space</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero atque rerum voluptates,
+                    quaerat adipisci officia ab placeat id !</p> <br><br>
+                <button type="button">Details</button>
+            </div>
+            <div class="col " id="col8">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- section5 -->
+
+    <div class="container-fluid pt-5" id="section5">
+        <div class="row ">
+            <div class="col" id="section51">
+
+            </div>
+            <div class="col p-5" id="section52">
+                <h1>Professional and creative mind</h1> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat itaque commodi fugiat
+                    fugit pariatur consectetur reiciendis reprehenderit illo ex quaerat saepe rerum quo placeat, qui
+                    soluta quibusdam neque eveniet.</p> <br>
+                <h5>Architecture
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    60%</h5>
+                <hr style="border: 3px solid rgb(15, 106, 242); width: 290px">
+                <h5>3D Design
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    65%</h5>
+                <hr style="border: 3px solid rgb(15, 106, 242); width: 320px">
+                <h5>Interior
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    80%</h5>
+                <hr style="border: 3px solid rgb(15, 106, 242); width: 410px"> <br>
+                <button type="button">About Us</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+
+
+
+    <!-- section6 -->
+    <div class="container-fluid" id="section6">
+
+
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------- -->
+
+
+
+
+    <div class="container pt-5" id="SocialMedia">
+        <h1 style="text-align: center; font-size: 50px;">Explore Our Social Media</h1> <br>
+        <hr style="width: 100px; border: 3px solid black;margin: auto;">
+        <div class="row mt-5 pb-5">
+            <div class="col mt-5">
+                <h3> <span style="color: rgb(225, 48, 108)"> @Instagram</span> click below image ↓</h3> <br>
+                <a href=""> <img src="1(2).png" alt=""></a>
+
+            </div>
+            <div class="col mt-5">
+                <h3><span style="color: blue"> @Facebook</span> click below image ↓</h3> <br>
+                <a href=""> <img src="2(1).png" alt=""></a>
+            </div>
+            <div class="col mt-5">
+                <h3><span style="color: rgb(48, 123, 208)"> @Linkedin</span> click below image ↓</h3><br>
+                <a href=""> <img src="3(1).png" alt=""></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- last section -->
+    <div class="container-fluid pt-5 pb-2" id="last">
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col pb-5" id="col1">
+                    <h2>Have any project or query?</h2>
+                    <h2>Just say hello <span style="color:yellow">Mail us</span></h2>
+                </div>
+                <div class="col" id="col2">
+                    <h2>+91 673 586 XXXX</h2>
+                    <h5>xyz@abc.com</h5>
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <hr>
+                <br><br><br>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col">
+                    <h3>Address</h3>
+                    <p>New Delhi, Delhi, India</p>
+                    <p>+91 785 789 XXXX</p>
+                    <p>xyz@abc.com</p>
+                </div>
+                <div class="col">
+                    <h3>Services</h3>
+                    <ul type="none">
+                        <li><a href=""> Interior</a></li>
+                        <li><a href=""> Architecture</a></li>
+                        <li><a href=""> 3D Modeling</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Company</h3>
+                    <ul type="none">
+                        <li><a href=""> About</a></li>
+                        <li><a href=""> Blog</a></li>
+                        <li><a href=""> Contact</a></li>
+                        <li><a href=""> Appointment</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Subscribe</h3> <br>
+                    <input type="email" name="" id="" placeholder="Enter your mail">
+                    <button type="button">Subscribe</button> <br><br><br>
+                    <p>Esteem spirit temper too say adius who direct esteem lucjily</p>   
+                    
+                    
+                   
+                    <br><br>
+                </div>
+            
+            </div>
+            <hr>
+        </div>
+        
+        <p style="text-align: center;">Copyright ©2023 All rights reserved </p>
+    </div>
+
+
+    <!-- <script>
+        $(window).scroll(function(){
+            $('navbar').toggleClass('scrolled',$(this).scrollTop);
+        });
+    </script> -->
+</body>
+
+</html>
